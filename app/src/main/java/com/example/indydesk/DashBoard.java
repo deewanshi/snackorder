@@ -45,10 +45,10 @@ public class DashBoard extends AppCompatActivity {
 
 
 
-                if(album.getThumbnail()==R.drawable.Album1){
+                if(album.getThumbnail()==R.drawable.album1){
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Workout Warrior Half Sleeve T-Shirt");
-                    builder.setIcon(R.drawable.Album1);
+                    builder.setIcon(R.drawable.album1);
                     builder.setMessage("Fifbi Apparela Rs.399.0");
 
                     AlertDialog dialog = builder.create();
@@ -57,99 +57,99 @@ public class DashBoard extends AppCompatActivity {
 
 
                 }
-                else if(album.getThumbnail()==R.drawable.Album2){
+                else if(album.getThumbnail()==R.drawable.album2){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Student Waldrof Half Sleeve T-Shirt");
-                    builder.setIcon(R.drawable.Album2);
+                    builder.setIcon(R.drawable.album2);
                     builder.setMessage("Fifbi Apparela Rs.399.0");
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.Album3){
+                else if(album.getThumbnail()==R.drawable.album3){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Stand up for what is Right Half Sleeve T-Shirt");
-                    builder.setIcon(R.drawable.Album3);
+                    builder.setIcon(R.drawable.album3);
                     builder.setMessage("Fifbi Apparela Rs.399.0");
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.Album4){
+                else if(album.getThumbnail()==R.drawable.album4){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Daddy! Half Sleeve T-Shirt");
-                    builder.setIcon(R.drawable.Album4);
+                    builder.setIcon(R.drawable.album4);
                     builder.setMessage("Fifbi Apparela Rs.399.0");
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.Album5){
+                else if(album.getThumbnail()==R.drawable.album5){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Men's Premium Leather TimberLand Belt with classic buckle");
-                    builder.setIcon(R.drawable.Album5);
+                    builder.setIcon(R.drawable.album5);
                     builder.setMessage("Fitbi  Rs.750.0");
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.Album6){
+                else if(album.getThumbnail()==R.drawable.album6){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Men's Reversible Premium Leather Blt with Removable buckle");
-                    builder.setIcon(R.drawable.Album6);
+                    builder.setIcon(R.drawable.album6);
                     builder.setMessage("Fitbi  Rs.1200.0");
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.Album7){
+                else if(album.getThumbnail()==R.drawable.album7){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Men's Classic Buckle belt with Premium Leather");
-                    builder.setIcon(R.drawable.Album7);
+                    builder.setIcon(R.drawable.album7);
                     builder.setMessage("Fitbi  Rs.1200.0");
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.Album8){
+                else if(album.getThumbnail()==R.drawable.album8){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Men's Premium Leather Single Prong Classic Bucle belt");
-                    builder.setIcon(R.drawable.Album8);
+                    builder.setIcon(R.drawable.album8);
                     builder.setMessage("Fitbi Rs.650.0");
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.Album9){
+                else if(album.getThumbnail()==R.drawable.album9){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Men's Genuine Leather Belt with Fashionable & Classic Buckle");
-                    builder.setIcon(R.drawable.Album9);
+                    builder.setIcon(R.drawable.album9);
                     builder.setMessage("Fitbi  Rs.700.0");
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.Album10){
+                else if(album.getThumbnail()==R.drawable.album10){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Men's Slim Genuine smooth Leather Money Clip Dark Brown Wallet");
-                    builder.setIcon(R.drawable.Album10);
+                    builder.setIcon(R.drawable.album10);
                     builder.setMessage("Fifbi  Rs.500.0");
 
                     AlertDialog dialog = builder.create();
@@ -222,16 +222,16 @@ public class DashBoard extends AppCompatActivity {
      */
     private void prepareAlbums() {
         int[] covers = new int[]{
-                R.drawable.Album1,
-                R.drawable.Album2,
-                R.drawable.Album3,
-                R.drawable.Album4,
-                R.drawable.Album5,
-                R.drawable.Album6,
-                R.drawable.Album7,
-                R.drawable.Album8,
-                R.drawable.Album9,
-                R.drawable.Album10,
+                R.drawable.album1,
+                R.drawable.album2,
+                R.drawable.album3,
+                R.drawable.album4,
+                R.drawable.album5,
+                R.drawable.album6,
+                R.drawable.album7,
+                R.drawable.album8,
+                R.drawable.album9,
+                R.drawable.album10,
                 R.drawable.album11
         };
 
