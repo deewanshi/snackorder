@@ -69,10 +69,10 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FirebaseApp.initializeApp(this);
+
         setContentView(R.layout.activity_login);
 
-
+        FirebaseApp.initializeApp(this);
         mAuth=FirebaseAuth.getInstance();
         if(mAuth.getCurrentUser()!=null) {
             startActivity(new Intent(LoginActivity.this,DashBoard.class));

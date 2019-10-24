@@ -28,5 +28,6 @@
     <color name="colorPrimary">#6cd5d7</color>
     <color name="colorPrimaryDark">#2d538c</color>
     <color name="colorAccent">#FF4081</color>
-
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
 </resources>
