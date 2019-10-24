@@ -3,15 +3,15 @@ package com.example.indydesk;
 public class Album {
 
     private String name;
-    private int numOfSongs;
+    private int discount;
     private int thumbnail;
 
     public Album() {
     }
 
-    public Album(String name, int numOfSongs, int thumbnail) {
+    public Album(String name, int discount, int thumbnail) {
         this.name = name;
-        this.numOfSongs = numOfSongs;
+        this.discount = discount;
         this.thumbnail = thumbnail;
     }
 
@@ -23,12 +23,12 @@ public class Album {
         this.name = name;
     }
 
-    public int getNumOfSongs() {
-        return numOfSongs;
+    public int getDiscount() {
+        return discount;
     }
 
-    public void setNumOfSongs(int numOfSongs) {
-        this.numOfSongs = numOfSongs;
+    public void setDiscount(int discount) {
+        this.discount = discount;
     }
 
     public int getThumbnail() {
