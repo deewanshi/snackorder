@@ -6,6 +6,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:layout_gravity="center"
 android:orientation="vertical"
+    android:background="@color/primary"
 tools:context=".LoginActivity">
     <ScrollView
 
@@ -45,7 +46,10 @@ tools:context=".LoginActivity">
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="Email" />
+                android:hint="Email"
+
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/accent"/>/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -57,7 +61,9 @@ tools:context=".LoginActivity">
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="Password"/>
+                android:hint="Password"
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/accent"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
@@ -67,7 +73,9 @@ tools:context=".LoginActivity">
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
-            android:text="Login"/>
+            android:text="Login"
+            android:background="@color/primary_darker"
+            android:textColor="@color/white"/>
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_signup"

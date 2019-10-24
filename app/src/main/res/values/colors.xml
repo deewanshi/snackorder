@@ -3,7 +3,20 @@
 <!--
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#E43F3F</color>
+
+</resources>
+-->
+
+
+<resources>
+    <color name="colorPrimary">#6cd5d7</color>
+    <color name="colorPrimaryDark">#2d538c</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+
+    <color name="primary">#EC6565</color>
     <color name="primary_dark">#E12929</color>
     <color name="primary_darker">#CC1D1D</color>
     <color name="accent">#FFFFFF</color>
@@ -17,17 +30,5 @@
     <color name="base">#AAAAAA</color>
     <color name="iron">#CCCCCC</color>
     <color name="white">#FFFFFF</color>
-    <color name="viewBg">#f1f5f8</color>
-    <color name="album_title">#4c4c4c</color>
 
-</resources>
--->
-
-
-<resources>
-    <color name="colorPrimary">#6cd5d7</color>
-    <color name="colorPrimaryDark">#2d538c</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="viewBg">#f1f5f8</color>
-    <color name="album_title">#4c4c4c</color>
 </resources>

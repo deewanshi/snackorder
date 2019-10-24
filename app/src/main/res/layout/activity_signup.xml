@@ -7,8 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@android:color/white"
+    android:background="@color/primary"
     android:fitsSystemWindows="true"
+
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
@@ -40,7 +41,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:hint="Name" />
+                android:hint="Name"
+
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/accent"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -52,7 +56,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPostalAddress"
-                android:hint="Address" />
+                android:hint="Address"
+
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/accent"/>
         </android.support.design.widget.TextInputLayout>
 
 
@@ -66,7 +73,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="Email" />
+                android:hint="Email"
+
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/accent"/>
         </android.support.design.widget.TextInputLayout>
 
 
@@ -79,7 +89,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:hint="Mobile Number" />
+                android:hint="Mobile Number"
+
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/accent"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -91,7 +104,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="Password"/>
+                android:hint="Password"
+
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/accent"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
@@ -101,7 +117,10 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
-            android:text="Create Account"/>
+            android:text="Create Account"
+
+            android:textColorHint="@color/aluminum"
+            android:textColor="@color/accent"/>
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/sign_in_button"

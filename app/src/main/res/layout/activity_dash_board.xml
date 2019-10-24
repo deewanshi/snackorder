@@ -34,8 +34,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fitsSystemWindows="true"
-                    android:scaleType="centerCrop"
-                    app:layout_collapseMode="parallax" />
+                    android:scaleType="fitXY"
+                    app:layout_collapseMode="parallax"
+                    />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -49,7 +50,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/backdrop_title"
-                        android:textColor="@android:color/white"
+                        android:textColor="#BB0C42"
                         android:textSize="@dimen/backdrop_title" />
 
                     <TextView
