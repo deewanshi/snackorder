@@ -1,9 +1,11 @@
 package com.example.indydesk;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -36,7 +38,137 @@ public class DashBoard extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         albumList = new ArrayList<>();
-        adapter = new AlbumsAdapter(this, albumList);
+        adapter = new AlbumsAdapter(getApplicationContext(), albumList, new AlbumClickListener() {
+            @Override
+            public void onAlbumClick(Album album) {
+
+
+
+
+                if(album.getThumbnail()==R.drawable.Album1){
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Workout Warrior Half Sleeve T-Shirt");
+                    builder.setIcon(R.drawable.Album1);
+                    builder.setMessage("Fifbi Apparela Rs.399.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+
+
+                }
+                else if(album.getThumbnail()==R.drawable.Album2){
+
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Student Waldrof Half Sleeve T-Shirt");
+                    builder.setIcon(R.drawable.Album2);
+                    builder.setMessage("Fifbi Apparela Rs.399.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                }
+                else if(album.getThumbnail()==R.drawable.Album3){
+
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Stand up for what is Right Half Sleeve T-Shirt");
+                    builder.setIcon(R.drawable.Album3);
+                    builder.setMessage("Fifbi Apparela Rs.399.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                }
+                else if(album.getThumbnail()==R.drawable.Album4){
+
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Daddy! Half Sleeve T-Shirt");
+                    builder.setIcon(R.drawable.Album4);
+                    builder.setMessage("Fifbi Apparela Rs.399.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                }
+                else if(album.getThumbnail()==R.drawable.Album5){
+
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Men's Premium Leather TimberLand Belt with classic buckle");
+                    builder.setIcon(R.drawable.Album5);
+                    builder.setMessage("Fitbi  Rs.750.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                }
+                else if(album.getThumbnail()==R.drawable.Album6){
+
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Men's Reversible Premium Leather Blt with Removable buckle");
+                    builder.setIcon(R.drawable.Album6);
+                    builder.setMessage("Fitbi  Rs.1200.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                }
+                else if(album.getThumbnail()==R.drawable.Album7){
+
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Men's Classic Buckle belt with Premium Leather");
+                    builder.setIcon(R.drawable.Album7);
+                    builder.setMessage("Fitbi  Rs.1200.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                }
+                else if(album.getThumbnail()==R.drawable.Album8){
+
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Men's Premium Leather Single Prong Classic Bucle belt");
+                    builder.setIcon(R.drawable.Album8);
+                    builder.setMessage("Fitbi Rs.650.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                }
+                else if(album.getThumbnail()==R.drawable.Album9){
+
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Men's Genuine Leather Belt with Fashionable & Classic Buckle");
+                    builder.setIcon(R.drawable.Album9);
+                    builder.setMessage("Fitbi  Rs.700.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                }
+                else if(album.getThumbnail()==R.drawable.Album10){
+
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Men's Slim Genuine smooth Leather Money Clip Dark Brown Wallet");
+                    builder.setIcon(R.drawable.Album10);
+                    builder.setMessage("Fifbi  Rs.500.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                }
+                else if(album.getThumbnail()==R.drawable.album11){
+
+                    AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
+                    builder.setTitle("Men's Slim Genuine smooth Leather Money Clip Light Brown Wallet");
+                    builder.setIcon(R.drawable.album11);
+                    builder.setMessage("Fitbi  Rs.500.0");
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                }
+            }
+        });
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(mLayoutManager);
@@ -90,17 +222,18 @@ public class DashBoard extends AppCompatActivity {
      */
     private void prepareAlbums() {
         int[] covers = new int[]{
-                R.drawable.album1,
-                R.drawable.album2,
-                R.drawable.album3,
-                R.drawable.album4,
-                R.drawable.album5,
-                R.drawable.album6,
-                R.drawable.album7,
-                R.drawable.album8,
-                R.drawable.album9,
-                R.drawable.album10,
-                R.drawable.album11};
+                R.drawable.Album1,
+                R.drawable.Album2,
+                R.drawable.Album3,
+                R.drawable.Album4,
+                R.drawable.Album5,
+                R.drawable.Album6,
+                R.drawable.Album7,
+                R.drawable.Album8,
+                R.drawable.Album9,
+                R.drawable.Album10,
+                R.drawable.album11
+        };
 
         Album a = new Album("True Romance", 13, covers[0]);
         albumList.add(a);
