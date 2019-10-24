@@ -44,7 +44,8 @@
                 android:paddingBottom="@dimen/songs_count_padding_bottom"
                 android:paddingLeft="@dimen/album_title_padding"
                 android:paddingRight="@dimen/album_title_padding"
-                android:textSize="@dimen/songs_count" />
+                android:textSize="@dimen/songs_count"
+                />
 
             <ImageView
                 android:id="@+id/overflow"
@@ -54,7 +55,7 @@
                 android:layout_below="@id/thumbnail"
                 android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_dots" />
+                android:src="@drawable/ic_keyboard_arrow_right_pink_800_36dp" />
 
         </RelativeLayout>
 

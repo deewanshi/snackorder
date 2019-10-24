@@ -49,14 +49,14 @@ public class Album implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.name);
-        dest.writeInt(this.numOfSongs);
+        dest.writeInt(this.discount);
         dest.writeInt(this.thumbnail);
 
     }
 
     protected Album(Parcel in){
         this.name=in.readString();
-        this.numOfSongs=in.readInt();
+        this.discount=in.readInt();
         this.thumbnail=in.readInt();
     }
 
