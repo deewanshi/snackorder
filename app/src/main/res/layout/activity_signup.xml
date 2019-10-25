@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/primary"
+    android:background="@drawable/bakground"
     android:fitsSystemWindows="true"
 
     android:orientation="vertical"
@@ -24,42 +24,48 @@
         android:layout_height="wrap_content"
         android:paddingTop="56dp"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp">
-
-        <ImageView android:src="@drawable/logo"
+        android:paddingRight="24dp"
+        android:layout_marginTop="50dp">
+        <!--<ImageView android:src="@drawable/logo"
             android:layout_width="wrap_content"
             android:layout_height="72dp"
             android:layout_marginBottom="24dp"
             android:layout_gravity="center_horizontal" />
-
+-->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
             <EditText android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:hint="Name"
 
-                android:textColorHint="@color/aluminum"
-                android:textColor="@color/accent"/>
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
             <EditText android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPostalAddress"
                 android:hint="Address"
 
-                android:textColorHint="@color/aluminum"
-                android:textColor="@color/accent"/>
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
         </android.support.design.widget.TextInputLayout>
 
 
@@ -68,15 +74,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
             <EditText android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:hint="Email"
 
-                android:textColorHint="@color/aluminum"
-                android:textColor="@color/accent"/>
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
         </android.support.design.widget.TextInputLayout>
 
 
@@ -84,30 +93,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
             <EditText android:id="@+id/phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:hint="Mobile Number"
 
-                android:textColorHint="@color/aluminum"
-                android:textColor="@color/accent"/>
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
             <EditText android:id="@+id/input_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:hint="Password"
 
-                android:textColorHint="@color/aluminum"
-                android:textColor="@color/accent"/>
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
@@ -116,18 +131,27 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
+
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
             android:padding="12dp"
             android:text="Create Account"
 
-            android:textColorHint="@color/aluminum"
-            android:textColor="@color/accent"/>
+            android:background="@drawable/oval"
+
+            android:textColor="@color/white"/>
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/sign_in_button"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@null"
             android:text="Already a member? Login"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="16dip"/>
 

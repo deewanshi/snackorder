@@ -6,7 +6,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:layout_gravity="center"
 android:orientation="vertical"
-    android:background="@color/primary"
+    android:background="@drawable/bakground"
 tools:context=".LoginActivity">
     <ScrollView
 
@@ -19,10 +19,10 @@ tools:context=".LoginActivity">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="200dp"
         android:gravity="center">
 
-    <LinearLayout
+   <!-- <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -30,40 +30,45 @@ tools:context=".LoginActivity">
         android:gravity="center">
 
 
-    <ImageView android:src="@drawable/logo"
+   &lt;!&ndash; <ImageView android:src="@drawable/logo"
             android:layout_width="wrap_content"
             android:layout_height="72dp"
             android:layout_marginBottom="24dp"
             android:layout_gravity="center_horizontal" />
-    </LinearLayout>
-
+   &ndash;&gt; </LinearLayout>
+-->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
             <EditText android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:hint="Email"
 
-                android:textColorHint="@color/aluminum"
-                android:textColor="@color/accent"/>/>
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
             <EditText android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:hint="Password"
-                android:textColorHint="@color/aluminum"
-                android:textColor="@color/accent"/>
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
@@ -72,9 +77,11 @@ tools:context=".LoginActivity">
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/oval"
             android:padding="12dp"
             android:text="Login"
-            android:background="@color/primary_darker"
             android:textColor="@color/white"/>
 
         <android.support.v7.widget.AppCompatButton
@@ -84,10 +91,10 @@ tools:context=".LoginActivity">
             android:layout_alignParentEnd="true"
             android:layout_gravity="center"
             android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
             android:background="@null"
-            android:text="CREATE ACCOUNT"
+            android:text="SIGN UP"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
             android:textSize="15sp" />
@@ -104,9 +111,11 @@ tools:context=".LoginActivity">
                 android:layout_width="142dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_gravity="start"
-                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="130dp"
                 android:layout_marginTop="16dip"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
                 android:background="@null"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"

@@ -4,7 +4,7 @@
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@android:color/black"
     android:fitsSystemWindows="true">
 
     <android.support.design.widget.AppBarLayout
@@ -50,7 +50,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/backdrop_title"
-                        android:textColor="#BB0C42"
+                        android:textColor="#FFFFFF"
                         android:textSize="@dimen/backdrop_title" />
 
                     <TextView

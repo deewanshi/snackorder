@@ -9,9 +9,9 @@
 
 
 <resources>
-    <color name="colorPrimary">#6cd5d7</color>
+    <color name="colorPrimary">#009688</color>
     <color name="colorPrimaryDark">#2d538c</color>
-    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorAccent">#000000</color>
     <color name="viewBg">#f1f5f8</color>
     <color name="album_title">#4c4c4c</color>
 
@@ -27,7 +27,7 @@
     <color name="monsoon">#777777</color>
     <color name="jumbo">#888888</color>
     <color name="aluminum">#999999</color>
-    <color name="base">#AAAAAA</color>
+    <color name="base">#CCF4F8</color>
     <color name="iron">#CCCCCC</color>
     <color name="white">#FFFFFF</color>
 
