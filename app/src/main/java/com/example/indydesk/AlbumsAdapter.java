@@ -1,7 +1,9 @@
 package com.example.indydesk;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -55,7 +57,7 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
         final Album album = albumList.get(position);
         holder.title.setText(album.getName());
 
-        holder.count.setText(album.getDiscount() + " % off");
+        holder.count.setText(album.getDiscount() + "% off");
 
 
         // loading album cover using Glide library
@@ -65,6 +67,15 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
             @Override
             public void onClick(View view) {
                 listener.onAlbumClick(album);
+
+            }
+        });
+        holder.thumbnail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(mContext, TiwariUncle.class);
+                mContext.startActivity(intent);
             }
         });
     }

@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/bakground"
+    android:background="@color/bg_screen2"
     android:fitsSystemWindows="true"
 
     android:orientation="vertical"
@@ -46,7 +46,7 @@
                 android:inputType="textPersonName"
                 android:hint="Name"
 
-                android:textColorHint="@color/black"
+                android:textColorHint="@color/colorAccent"
                 android:textColor="@color/black"/>
         </android.support.design.widget.TextInputLayout>
 
@@ -120,10 +120,11 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:hint="Password"
-
-                android:textColorHint="@color/black"
                 android:textColor="@color/black"/>
         </android.support.design.widget.TextInputLayout>
+<!--
+                android:textColorHint="@color/black"-->
+
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/sign_up_button"
@@ -156,7 +157,15 @@
             android:textSize="16dip"/>
 
     </LinearLayout>
-</ScrollView>-->
+</ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
 </LinearLayout>
 
 <!--

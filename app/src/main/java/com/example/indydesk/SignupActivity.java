@@ -34,7 +34,7 @@ public class SignupActivity extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            FirebaseApp.initializeApp(this);
+            //FirebaseApp.initializeApp(this);
             setContentView(R.layout.activity_signup);
 
             /*toolbar= findViewById(R.id.toolbar_signup);
@@ -58,7 +58,7 @@ public class SignupActivity extends AppCompatActivity {
             inputAddress = (EditText) findViewById(R.id.address);
             inputPhone= (EditText) findViewById(R.id.phone_number);
             inputPassword = (EditText) findViewById(R.id.password);
-            //progressBar = (ProgressBar) findViewById(R.id.progressBar);
+            progressBar = (ProgressBar) findViewById(R.id.progressBar);
             //btnResetPassword = (Button) findViewById(R.id.btn_reset_password);
 
 
@@ -72,24 +72,27 @@ public class SignupActivity extends AppCompatActivity {
             btnSignUp.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    String name = inputName.getText().toString().trim();
+
+                    String address = inputAddress.getText().toString().trim();
 
                     String email = inputEmail.getText().toString().trim();
-                    String password = inputPassword.getText().toString().trim();
-                    String name = inputName.getText().toString().trim();
-                    String address = inputAddress.getText().toString().trim();
                     String phone = inputPhone.getText().toString().trim();
+                    String password = inputPassword.getText().toString().trim();
 
 
-                    if (TextUtils.isEmpty(email)) {
-                        Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
-                        return;
-                    }
+
                     if (TextUtils.isEmpty(name)) {
                         Toast.makeText(getApplicationContext(), "Enter Name!", Toast.LENGTH_SHORT).show();
                         return;
                     }
                     if (TextUtils.isEmpty(address)) {
                         Toast.makeText(getApplicationContext(), "Enter address!", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                    if (TextUtils.isEmpty(email)) {
+                        Toast.makeText(getApplicationContext(), "Enter email address!", Toast.LENGTH_SHORT).show();
                         return;
                     }
                     if (TextUtils.isEmpty(phone)) {
@@ -106,9 +109,10 @@ public class SignupActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
                         return;
                     }
+/**/
+
 
                     progressBar.setVisibility(View.VISIBLE);
-                    //create user
                     auth.createUserWithEmailAndPassword(email, password)
                             .addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
@@ -138,5 +142,7 @@ public class SignupActivity extends AppCompatActivity {
         @Override
         protected void onResume() {
             super.onResume();
+
+            progressBar.setVisibility(View.GONE);
         }
     }

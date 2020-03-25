@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         FirebaseApp.initializeApp(this);
         mAuth=FirebaseAuth.getInstance();
         if(mAuth.getCurrentUser()!=null) {
-            startActivity(new Intent(LoginActivity.this,DashBoard.class));
+            startActivity(new Intent(LoginActivity.this,Shop.class));
         }
 /*
         toolbar= findViewById(R.id.toolbar_login);
@@ -85,7 +85,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         //mFacebookLoginButton = (LoginButton) findViewById(R.id.login_with_facebook);
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
-        //progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
         btnSignup = (Button) findViewById(R.id.btn_signup);
         btnLogin = (Button) findViewById(R.id.btn_login);
         //btnReset = (Button) findViewById(R.id.btn_reset_password);
@@ -123,8 +123,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                     return;
                 }
 
-                progressBar.setVisibility(View.VISIBLE);
-
+               progressBar.setVisibility(View.VISIBLE);
                 //authenticate user
                 mAuth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
@@ -133,7 +132,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                                 // If sign in fails, display a message to the user. If sign in succeeds
                                 // the auth state listener will be notified and logic to handle the
                                 // signed in user can be handled in the listener.
-                                progressBar.setVisibility(View.GONE);
+                               progressBar.setVisibility(View.GONE);
                                 if (!task.isSuccessful()) {
                                     // there was an error
                                     if (password.length() < 6) {
@@ -142,7 +141,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
-                                    startActivity(new Intent(LoginActivity.this, DashBoard.class));
+                                    startActivity(new Intent(LoginActivity.this, Shop.class));
                                     finish();
                                 }
                             }
@@ -245,7 +244,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                             Toast.makeText(LoginActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                         } else {
-                            startActivity(new Intent(LoginActivity.this, DashBoard.class));
+                            startActivity(new Intent(LoginActivity.this, Shop.class));
                             finish();
                         }
                     }

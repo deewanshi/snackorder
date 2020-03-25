@@ -1,10 +1,19 @@
 <resources>
-    <string name="app_name">Indydesk</string>
+    <string name="app_name">Foodie@IGDTUW</string>
     <string name="action_settings">Settings</string>
     <string name="action_add_favourite">Add to Favourites</string>
     <string name="action_play_next">Play Next</string>
-    <string name="backdrop_title">Fifbi</string>
-    <string name="backdrop_subtitle">Love Fashion</string>
+    <string name="backdrop_title">Lets Party</string>
+    <string name="backdrop_subtitle">Love Food</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title"></string>
+    <string name="slide_1_desc">TO THE PARTY..</string>
+
+    <string name="slide_2_title">ORDER.EAT.PHIR REPEAT</string>
+    <!--
+    &lt;!&ndash;&ndash;&gt;<string name="slide_2_desc">More than 50% discounts . ONLY FOR YOU !!</string>-->
 
 
     <string name="action_sign_in_short">Register</string>

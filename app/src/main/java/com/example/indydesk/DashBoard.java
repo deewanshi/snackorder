@@ -52,9 +52,9 @@ public class DashBoard extends AppCompatActivity {
 
                 if(album.getThumbnail()==R.drawable.album1){
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
-                    builder.setTitle("Workout Warrior Half Sleeve T-Shirt");
+                    builder.setTitle("Yeh Dil Maange More");
                     builder.setIcon(R.drawable.album1);
-                    builder.setMessage("Fifbi Apparela\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
+                    builder.setMessage("Soft Drinks\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
                             "\n" +
                             "Fit Type: Regular Fit\n" +
                             "Brand: Fifbi\n" +
@@ -63,8 +63,7 @@ public class DashBoard extends AppCompatActivity {
                             "Fitting: Regular Fit\n" +
                             "Material: Cotton \n ");
 
-
-                    builder.setNegativeButton("Rs.399.0", new DialogInterface.OnClickListener() {
+                    builder.setNegativeButton("Rs.35.0", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 
@@ -81,9 +80,9 @@ public class DashBoard extends AppCompatActivity {
                 else if(album.getThumbnail()==R.drawable.album2){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
-                    builder.setTitle("Studio Waldrof Half Sleeve T-Shirt");
+                    builder.setTitle("Chai par Charcha");
                     builder.setIcon(R.drawable.album2);
-                    builder.setMessage("Fifbi Apparela\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
+                    builder.setMessage("T for Tapri\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
                             "\n" +
                             "Fit Type: Regular Fit\n" +
                             "Brand: Fifbi\n" +
@@ -108,9 +107,9 @@ public class DashBoard extends AppCompatActivity {
                 else if(album.getThumbnail()==R.drawable.album3){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
-                    builder.setTitle("Stand up for what is Right Half Sleeve T-Shirt");
+                    builder.setTitle("The Taste of India");
                     builder.setIcon(R.drawable.album3);
-                    builder.setMessage("Fifbi Apparela\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
+                    builder.setMessage("Amul Drinks\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
                             "\n" +
                             "Fit Type: Regular Fit\n" +
                             "Brand: Fifbi\n" +
@@ -133,9 +132,9 @@ public class DashBoard extends AppCompatActivity {
                 else if(album.getThumbnail()==R.drawable.album4){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
-                    builder.setTitle("Daddy! Half Sleeve T-Shirt");
+                    builder.setTitle("2 minute noodles");
                     builder.setIcon(R.drawable.album4);
-                    builder.setMessage("Fifbi Apparela\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
+                    builder.setMessage("Maggi-Momos\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
                             "\n" +
                             "\n" +
                             "Fit Type: Regular Fit\n" +
@@ -158,7 +157,7 @@ public class DashBoard extends AppCompatActivity {
                 else if(album.getThumbnail()==R.drawable.album5){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
-                    builder.setTitle("Men's Premium Leather TimberLand Belt with classic buckle");
+                    builder.setTitle("The one thing that everyone eats is Samosa");
                     builder.setIcon(R.drawable.album5);
                     builder.setMessage("Fifbi\n Fifbi Brought Up This Brown Coloured Single Pack Belt That Will Add A Touch Of Understated Style To Your Overall Office Appearance. Made Of Rich Quality Faux Leather, This Belt For Men Is Best Worn With Casual Or Semi-Casual. This Belt Will Not Only Keep Your Trousers And Jeans In Place But Will Also Make You Look Stylish. Material Of This Belt Is Of Faux Leather Which Is Highest In Its Quality\n" +
                             "\n" +
@@ -181,9 +180,9 @@ public class DashBoard extends AppCompatActivity {
                 else if(album.getThumbnail()==R.drawable.album6){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
-                    builder.setTitle("Men's Reversible Premium Leather Blt with Removable buckle");
+                    builder.setTitle("Kuch mitha ho jaye");
                     builder.setIcon(R.drawable.album6);
-                    builder.setMessage("Fifbi\n TWO IN ONE:- Reversible belt, Twist buckle to change belt side. REVERSIBLE: It's a Reversible belt. just pull and turnbuckle and use it from BOTH SIDE BLACK AND BROWN. Quality: Premium. Made In India But Material Imported. A History & Tradition of Exceptional Quality: This Premium ADDITION full grain leather belt construction offers the highest quality and maximum durability. A Black shade which goes well with any of your formal or evening wear. This comes with a premium chrome buckle. **Note:- The Buckle design may slightly vary as per the availability. CARE INSTRUCTION - Clean with the SOFT cotton cloth.\n" +
+                    builder.setMessage("Wafers and Chocolates\n TWO IN ONE:- Reversible belt, Twist buckle to change belt side. REVERSIBLE: It's a Reversible belt. just pull and turnbuckle and use it from BOTH SIDE BLACK AND BROWN. Quality: Premium. Made In India But Material Imported. A History & Tradition of Exceptional Quality: This Premium ADDITION full grain leather belt construction offers the highest quality and maximum durability. A Black shade which goes well with any of your formal or evening wear. This comes with a premium chrome buckle. **Note:- The Buckle design may slightly vary as per the availability. CARE INSTRUCTION - Clean with the SOFT cotton cloth.\n" +
                             "\n" +
                             "\n" +
                             "\n" +
@@ -203,6 +202,7 @@ public class DashBoard extends AppCompatActivity {
                     dialog.show();
 
                 }
+                /*
                 else if(album.getThumbnail()==R.drawable.album7){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
@@ -321,7 +321,7 @@ public class DashBoard extends AppCompatActivity {
                     AlertDialog dialog = builder.create();
                     dialog.show();
 
-                }
+                }*/
             }
         });
 
@@ -400,43 +400,46 @@ public class DashBoard extends AppCompatActivity {
                 R.drawable.album3,
                 R.drawable.album4,
                 R.drawable.album5,
-                R.drawable.album6,
+                R.drawable.album6
+                /*
                 R.drawable.album7,
                 R.drawable.album8,
                 R.drawable.album9,
                 R.drawable.album10,
-                R.drawable.album11
+                R.drawable.album11*/
         };
 
-        Album a = new Album("Levis", 50, covers[0]);
+        Album a = new Album("Soft Drinks", 50, covers[0]);
         albumList.add(a);
 
-        a = new Album("UCB", 8, covers[1]);
+        a = new Album("T for Tapri", 80, covers[1]);
         albumList.add(a);
 
-        a = new Album("Roadster", 11, covers[2]);
+        a = new Album("Amul", 60, covers[2]);
         albumList.add(a);
 
-        a = new Album("Puma", 12, covers[3]);
+        a = new Album("Chinese", 50, covers[3]);
         albumList.add(a);
 
-        a = new Album("Roadster", 14, covers[4]);
+        a = new Album("Snacks", 50, covers[4]);
         albumList.add(a);
 
-        a = new Album(" Versace", 1, covers[5]);
+        a = new Album(" Wafers & Chocolates", 30, covers[5]);
         albumList.add(a);
 
-        a = new Album("Gucci", 11, covers[6]);
+/*
+        a = new Album("Gucci", 20, covers[6]);
         albumList.add(a);
 
-        a = new Album("Armani", 14, covers[7]);
+        a = new Album("Armani", 50, covers[7]);
         albumList.add(a);
 
-        a = new Album("Louis Phillepe", 11, covers[9]);
+        a = new Album("Louis Phillepe", 60, covers[9]);
         albumList.add(a);
 
-        a = new Album("Louis Vetton", 17, covers[10]);
+        a = new Album("Louis Vetton", 40, covers[10]);
         albumList.add(a);
+*/
 
         adapter.notifyDataSetChanged();
     }
