@@ -26,10 +26,15 @@ import butterknife.ButterKnife;
 public class SignupActivity extends AppCompatActivity {
 
 
-        private EditText inputEmail, inputPassword, inputName,inputAddress,inputPhone;
+        private EditText inputEmail;
+        private EditText inputPassword;
+        private EditText  inputName;
+        private EditText inputAddress;
+        private EditText inputPhone;
         private Button btnSignIn, btnSignUp, btnResetPassword;
         private ProgressBar progressBar;
         private FirebaseAuth auth;
+        String name,email,address,password,phone;
         android.support.v7.widget.Toolbar  toolbar;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +67,7 @@ public class SignupActivity extends AppCompatActivity {
             //btnResetPassword = (Button) findViewById(R.id.btn_reset_password);
 
 
+
             btnSignIn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -72,16 +78,12 @@ public class SignupActivity extends AppCompatActivity {
             btnSignUp.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    String name = inputName.getText().toString().trim();
-
-                    String address = inputAddress.getText().toString().trim();
-
-                    String email = inputEmail.getText().toString().trim();
-                    String phone = inputPhone.getText().toString().trim();
-                    String password = inputPassword.getText().toString().trim();
-
-
-
+                    name = inputName.getText().toString().trim();
+                    address = inputAddress.getText().toString().trim();
+                    email = inputEmail.getText().toString().trim();
+                    phone = inputPhone.getText().toString().trim();
+                    password = inputPassword.getText().toString().trim();
+                    System.out.println(name+" "+email+" "+" "+phone+" "+password);
                     if (TextUtils.isEmpty(name)) {
                         Toast.makeText(getApplicationContext(), "Enter Name!", Toast.LENGTH_SHORT).show();
                         return;
@@ -129,7 +131,7 @@ public class SignupActivity extends AppCompatActivity {
                                     } else {
                                         Toast.makeText(SignupActivity.this, "Thank You for Registration" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
 
-                                        startActivity(new Intent(SignupActivity.this, DashBoard.class));
+                                        startActivity(new Intent(SignupActivity.this, Shop.class));
                                         finish();
                                     }
                                 }

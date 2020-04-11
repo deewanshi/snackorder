@@ -49,16 +49,23 @@
                         android:id="@+id/love_music"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/backdrop_title"
+                        android:textAlignment="center"
+                        android:text="                   Let's Party                   "
+                        android:background="#99141414"
                         android:textColor="#FFFFFF"
-                        android:textSize="@dimen/backdrop_title" />
+                        android:textSize="@dimen/backdrop_title"
+                        android:padding="10dp"/>
 
                     <TextView
+                        android:id="@+id/foodme"
+                        android:textAlignment="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/backdrop_subtitle"
-                        android:textColor="@android:color/white"
-                        android:textSize="@dimen/backdrop_subtitle" />
+                        android:text="                And Love Food                "
+                        android:padding="10dp"
+                        android:background="#99141414"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30dp" />
 
                 </LinearLayout>
             </RelativeLayout>

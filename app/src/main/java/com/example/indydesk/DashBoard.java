@@ -17,6 +17,7 @@ import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
@@ -28,11 +29,16 @@ public class DashBoard extends AppCompatActivity {
     private AlbumsAdapter adapter;
     private List<Album> albumList;
     private FirebaseAuth mAuth;
+    TextView tv1,tv2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
+        tv1=findViewById(R.id.love_music);
+        tv2=findViewById(R.id.foodme);
+        tv1.setSelected(true);
+        tv2.setSelected(true);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
