@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/bg_screen2"
+    android:background="@drawable/pizza_background"
     android:fitsSystemWindows="true"
 
     android:orientation="vertical"
@@ -21,7 +21,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginTop="10dp">
         <!--<ImageView android:src="@drawable/logo"
@@ -54,8 +54,8 @@
                 android:inputType="textPersonName"
                 android:hint="Name"
 
-                android:textColorHint="@color/colorAccent"
-                android:textColor="@color/black"/>
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/white"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -72,8 +72,8 @@
                 android:inputType="textPostalAddress"
                 android:hint="Address"
 
-                android:textColorHint="@color/black"
-                android:textColor="@color/black"/>
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/white"/>
         </android.support.design.widget.TextInputLayout>
 
 
@@ -92,8 +92,8 @@
                 android:inputType="textEmailAddress"
                 android:hint="Email"
 
-                android:textColorHint="@color/black"
-                android:textColor="@color/black"/>
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/white"/>
         </android.support.design.widget.TextInputLayout>
 
 
@@ -111,8 +111,8 @@
                 android:inputType="number"
                 android:hint="Mobile Number"
 
-                android:textColorHint="@color/black"
-                android:textColor="@color/black"/>
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/white"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -127,8 +127,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="Password"
-                android:textColor="@color/black"/>
+                android:hint="@string/hint_password"
+                android:textColorHint="@color/aluminum"
+                android:textColor="@color/white"/>
         </android.support.design.widget.TextInputLayout>
 <!--
                 android:textColorHint="@color/black"-->
@@ -167,7 +168,7 @@
             android:paddingBottom="40dp"
             android:textStyle="bold"
             android:text="Already a member? Login"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="17dp" />
 
     </LinearLayout>

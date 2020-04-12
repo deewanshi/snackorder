@@ -53,8 +53,9 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
     }
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, int position) {
+    public void onBindViewHolder(final MyViewHolder holder, final int position) {
         final Album album = albumList.get(position);
+        System.out.println(album+" is here");
         holder.title.setText(album.getName());
 
         holder.count.setText(album.getDiscount() + "% off");
@@ -73,9 +74,37 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
         holder.thumbnail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(position==0){
+                    Toast.makeText(mContext, "Soft Drinks", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mContext, TiwariUncle.class);
+                    mContext.startActivity(intent);
+                }
+                if(position==1){
+                    Toast.makeText(mContext, "Hello friends! Let's have chai", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mContext, TiwariUncle.class);
+                    mContext.startActivity(intent);
+                }
+                if(position==2){
+                    Toast.makeText(mContext, "Healthy Wealthy Amul", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mContext, TiwariUncle.class);
+                    mContext.startActivity(intent);
+                }
+                if(position==3){
+                    Toast.makeText(mContext, "Something Chinese", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mContext, TiwariUncle.class);
+                    mContext.startActivity(intent);
+                }
+                if(position==4){
+                    Toast.makeText(mContext, "Everyday Snacks", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mContext, TiwariUncle.class);
+                    mContext.startActivity(intent);
+                }
+                if(position==5){
+                    Toast.makeText(mContext, "Wafers and Chocolates", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mContext, TiwariUncle.class);
+                    mContext.startActivity(intent);
+                }
 
-                Intent intent = new Intent(mContext, TiwariUncle.class);
-                mContext.startActivity(intent);
             }
         });
     }

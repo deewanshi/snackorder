@@ -60,7 +60,7 @@ public class DashBoard extends AppCompatActivity {
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Yeh Dil Maange More");
                     builder.setIcon(R.drawable.album1);
-                    builder.setMessage("Soft Drinks\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
+                    builder.setMessage("Soft Drinks\nA very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
                             "\n" +
                             "Fit Type: Regular Fit\n" +
                             "Brand: Fifbi\n" +
@@ -83,12 +83,12 @@ public class DashBoard extends AppCompatActivity {
 
 
                 }
-                else if(album.getThumbnail()==R.drawable.album2){
+                if(album.getThumbnail()==R.drawable.album2){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Chai par Charcha");
                     builder.setIcon(R.drawable.album2);
-                    builder.setMessage("T for Tapri\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
+                    builder.setMessage("T for Tapri\nA very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
                             "\n" +
                             "Fit Type: Regular Fit\n" +
                             "Brand: Fifbi\n" +
@@ -110,12 +110,12 @@ public class DashBoard extends AppCompatActivity {
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.album3){
+                if(album.getThumbnail()==R.drawable.album3){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("The Taste of India");
                     builder.setIcon(R.drawable.album3);
-                    builder.setMessage("Amul Drinks\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
+                    builder.setMessage("Amul Drinks\nA very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
                             "\n" +
                             "Fit Type: Regular Fit\n" +
                             "Brand: Fifbi\n" +
@@ -135,12 +135,12 @@ public class DashBoard extends AppCompatActivity {
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.album4){
+                if(album.getThumbnail()==R.drawable.album4){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("2 minute noodles");
                     builder.setIcon(R.drawable.album4);
-                    builder.setMessage("Maggi-Momos\n A very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
+                    builder.setMessage("Maggi-Momos\nA very stylist T shirt. Perfect for layering under blazers. shirts or smart enough to wear on its own. Perfect fit and soft cotton. more then sufficient to beat this summer heat with style.\n" +
                             "\n" +
                             "\n" +
                             "Fit Type: Regular Fit\n" +
@@ -160,12 +160,12 @@ public class DashBoard extends AppCompatActivity {
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.album5){
+                if(album.getThumbnail()==R.drawable.album5){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("The one thing that everyone eats is Samosa");
                     builder.setIcon(R.drawable.album5);
-                    builder.setMessage("Fifbi\n Fifbi Brought Up This Brown Coloured Single Pack Belt That Will Add A Touch Of Understated Style To Your Overall Office Appearance. Made Of Rich Quality Faux Leather, This Belt For Men Is Best Worn With Casual Or Semi-Casual. This Belt Will Not Only Keep Your Trousers And Jeans In Place But Will Also Make You Look Stylish. Material Of This Belt Is Of Faux Leather Which Is Highest In Its Quality\n" +
+                    builder.setMessage("Fifbi\nFifbi Brought Up This Brown Coloured Single Pack Belt That Will Add A Touch Of Understated Style To Your Overall Office Appearance. Made Of Rich Quality Faux Leather, This Belt For Men Is Best Worn With Casual Or Semi-Casual. This Belt Will Not Only Keep Your Trousers And Jeans In Place But Will Also Make You Look Stylish. Material Of This Belt Is Of Faux Leather Which Is Highest In Its Quality\n" +
                             "\n" +
                             "\n" +
                             "Material:- 100% Genuine leather\n" +
@@ -183,12 +183,12 @@ public class DashBoard extends AppCompatActivity {
                     dialog.show();
 
                 }
-                else if(album.getThumbnail()==R.drawable.album6){
+                if(album.getThumbnail()==R.drawable.album6){
 
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Kuch mitha ho jaye");
                     builder.setIcon(R.drawable.album6);
-                    builder.setMessage("Wafers and Chocolates\n TWO IN ONE:- Reversible belt, Twist buckle to change belt side. REVERSIBLE: It's a Reversible belt. just pull and turnbuckle and use it from BOTH SIDE BLACK AND BROWN. Quality: Premium. Made In India But Material Imported. A History & Tradition of Exceptional Quality: This Premium ADDITION full grain leather belt construction offers the highest quality and maximum durability. A Black shade which goes well with any of your formal or evening wear. This comes with a premium chrome buckle. **Note:- The Buckle design may slightly vary as per the availability. CARE INSTRUCTION - Clean with the SOFT cotton cloth.\n" +
+                    builder.setMessage("Wafers and Chocolates\nTWO IN ONE:- Reversible belt, Twist buckle to change belt side. REVERSIBLE: It's a Reversible belt. just pull and turnbuckle and use it from BOTH SIDE BLACK AND BROWN. Quality: Premium. Made In India But Material Imported. A History & Tradition of Exceptional Quality: This Premium ADDITION full grain leather belt construction offers the highest quality and maximum durability. A Black shade which goes well with any of your formal or evening wear. This comes with a premium chrome buckle. **Note:- The Buckle design may slightly vary as per the availability. CARE INSTRUCTION - Clean with the SOFT cotton cloth.\n" +
                             "\n" +
                             "\n" +
                             "\n" +
