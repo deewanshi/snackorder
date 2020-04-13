@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "555032811954",
+    "firebase_url": "https://foodigdtuw-3df43.firebaseio.com",
+    "project_id": "foodigdtuw-3df43",
+    "storage_bucket": "foodigdtuw-3df43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555032811954:android:ba9eac2a87769cdac6acab",
+        "android_client_info": {
+          "package_name": "com.example.indydesk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555032811954-h095tm7f4b8ucpfro66oaiaai10f75a6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.indydesk",
+            "certificate_hash": "1522c559ebc732f26a62b839900a473bf246d65a"
+          }
+        },
+        {
+          "client_id": "555032811954-mncv3ubnqh96s2ullghfg1odb0d5m099.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3tj2TJkz94F_8aHS0_Wv8ncg0eHQbS1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555032811954-mncv3ubnqh96s2ullghfg1odb0d5m099.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

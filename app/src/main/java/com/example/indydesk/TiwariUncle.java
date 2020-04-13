@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,7 +30,7 @@ public class TiwariUncle extends AppCompatActivity {
     String[] price;
     int desertNumber;
     Rowitem item;
-    LinearLayout lv;
+    RelativeLayout lv;
     RecyclerView.LayoutManager linearLayoutManager;
     TextView textView,checkout,prices;
     int tot,dt;
