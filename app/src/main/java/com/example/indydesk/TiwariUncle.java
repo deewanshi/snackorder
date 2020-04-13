@@ -7,6 +7,8 @@ import android.os.Bundle;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -29,8 +31,8 @@ public class TiwariUncle extends AppCompatActivity {
     Rowitem item;
     LinearLayout lv;
     RecyclerView.LayoutManager linearLayoutManager;
-    TextView textView,checkout;
-    int tot;
+    TextView textView,checkout,prices;
+    int tot,dt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,9 @@ public class TiwariUncle extends AppCompatActivity {
         setContentView(R.layout.activity_tiwari_uncle);
         textView=findViewById(R.id.total);
         checkout=findViewById(R.id.checkout);
+       // tot=desertNumber=0;
+//        prices=findViewById(R.id.price);
+        lv=findViewById(R.id.checkme);
         recyclerView=findViewById(R.id.my_recycler_view);
         mAuth= FirebaseAuth.getInstance();
         linearLayoutManager=new LinearLayoutManager(this);
@@ -131,16 +136,20 @@ public class TiwariUncle extends AppCompatActivity {
     public void Decrement(View view) {
 
         LinearLayout parentRow = (LinearLayout) view.getParent();
-
+        prices=((LinearLayout)parentRow.getParent()).findViewById(R.id.price);
         TextView quantityView = (TextView) parentRow.findViewById(R.id.num);
         String quantityString = quantityView.getText().toString();
         desertNumber = Integer.parseInt(quantityString);
         desertNumber -= 1;
-        if(desertNumber>=1){
-            String pp=item.getPrice();
+        if(desertNumber>=0){
+            String pp=prices.getText().toString();
+            System.out.println(pp);
             int ppp=Integer.parseInt(pp);
-            tot=tot+(ppp*desertNumber);
-            CheckOutMe(view);
+            System.out.println(ppp+" "+tot+" "+desertNumber);
+            tot=tot-ppp;
+            System.out.println(tot);
+            lv.setVisibility(View.VISIBLE);
+            textView.setText("Total Rs."+tot);
         }
 
         if (desertNumber < 0) {
@@ -152,30 +161,25 @@ public class TiwariUncle extends AppCompatActivity {
     public void Increment(View view) {
 
         LinearLayout parentRow = (LinearLayout) view.getParent();
-
+        prices=((LinearLayout)parentRow.getParent()).findViewById(R.id.price);
         TextView quantityView = (TextView) parentRow.findViewById(R.id.num);
         String quantityString = quantityView.getText().toString();
         desertNumber = Integer.parseInt(quantityString);
         desertNumber += 1;
+        dt=desertNumber;
         if(desertNumber>=1){
-            String pp=item.getPrice();
+            String pp=prices.getText().toString();
+            System.out.println(pp);
             int ppp=Integer.parseInt(pp);
-            tot=tot+(ppp*desertNumber);
-            CheckOutMe(view);
+            System.out.println(ppp+" "+tot+" "+desertNumber);
+            tot=tot+ppp;
+            System.out.println(tot);
+            lv.setVisibility(View.VISIBLE);
+            textView.setText("Total Rs."+tot);
+            //CheckOutMe(view);
         }
-        quantityView.setText(String.valueOf(desertNumber));
+        quantityView.setText(String.valueOf(dt));
     }
-    public void CheckOutMe(View view){
-        LinearLayout parentRow = (LinearLayout) view.getParent();
-        lv=view.findViewById(R.id.checkme);
-        lv.setVisibility(View.VISIBLE);
-        textView.setText("Total: Rs."+tot);
-        checkout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(TiwariUncle.this, "Total payment", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
+
 
 }
