@@ -5,14 +5,14 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
@@ -52,10 +52,6 @@ public class DashBoard extends AppCompatActivity {
         adapter = new AlbumsAdapter(getApplicationContext(), albumList, new AlbumClickListener() {
             @Override
             public void onAlbumClick(Album album) {
-
-
-
-
                 if(album.getThumbnail()==R.drawable.album1){
                     AlertDialog.Builder builder=new AlertDialog.Builder(DashBoard.this);
                     builder.setTitle("Yeh Dil Maange More");

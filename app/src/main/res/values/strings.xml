@@ -50,7 +50,134 @@
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
 
+    <string-array name="Member_names">
+        <item>Coke</item>
+        <item>Pepsi</item>
+        <item>Dew</item>
+        <item>Mirinda</item>
+        <item>Limca</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_pics">
+        <item>@drawable/coke</item>
+        <item>@drawable/pepsi</item>
+        <item>@drawable/dew</item>
+        <item>@drawable/mirinda</item>
+        <item>@drawable/limca</item>
+    </array>
+
+    <!-- Status -->
+    <string-array name="statues">
+        <item>12</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+    </string-array>
 
 
+    <string-array name="Member_names_tapri">
+        <item>Chai</item>
+        <item>Green Tea</item>
+        <item>Coffee</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_pics_tapri">
+        <item>@drawable/chai</item>
+        <item>@drawable/greentea</item>
+        <item>@drawable/coffee</item>
+    </array>
+
+    <!-- Status -->
+    <string-array name="statues_tapri">
+        <item>12</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="Member_names_amul">
+        <item>Amul Lassi</item>
+        <item>Amul Chhaach</item>
+        <item>Amul milk shake</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_pics_amul">
+        <item>@drawable/lassi</item>
+        <item>@drawable/chaach</item>
+        <item>@drawable/milkshake</item>
+    </array>
+
+    <!-- Status -->
+    <string-array name="statues_amul">
+        <item>20</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="Member_names_chinese">
+        <item>Momos</item>
+        <item>Spring Roll</item>
+        <item>Pasta</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_pics_chinese">
+        <item>@drawable/momos</item>
+        <item>@drawable/springroll</item>
+        <item>@drawable/pasta</item>
+    </array>
+
+    <!-- Status -->
+    <string-array name="statues_chinese">
+        <item>40</item>
+        <item>40</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="Member_names_snacks">
+        <item>Samosa</item>
+        <item>Pakode</item>
+        <item>Paneer Kulcha</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_pics_snacks">
+        <item>@drawable/samosa</item>
+        <item>@drawable/pkd</item>
+        <item>@drawable/paneer</item>
+    </array>
+
+    <!-- Status -->
+    <string-array name="statues_snacks">
+        <item>10</item>
+        <item>10</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="Member_names_wafers">
+        <item>Kurkure</item>
+        <item>Crunchy Munchy</item>
+        <item>Cadbury</item>
+        <item>Kitkat</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_pics_wafers">
+        <item>@drawable/kurukure</item>
+        <item>@drawable/crunch</item>
+        <item>@drawable/cadbury</item>
+        <item>@drawable/kitkat</item>
+    </array>
+
+    <!-- Status -->
+    <string-array name="statues_wafers">
+        <item>20</item>
+        <item>15</item>
+        <item>40</item>
+        <item>30</item>
+    </string-array>
 
 </resources>

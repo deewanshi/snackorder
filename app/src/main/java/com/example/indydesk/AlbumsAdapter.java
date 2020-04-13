@@ -2,15 +2,12 @@ package com.example.indydesk;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -77,31 +74,37 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.MyViewHold
                 if(position==0){
                     Toast.makeText(mContext, "Soft Drinks", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(mContext, TiwariUncle.class);
+                    intent.putExtra("Button1","1");
                     mContext.startActivity(intent);
                 }
                 if(position==1){
                     Toast.makeText(mContext, "Hello friends! Let's have chai", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(mContext, TiwariUncle.class);
+                    intent.putExtra("Button1","2");
                     mContext.startActivity(intent);
                 }
                 if(position==2){
                     Toast.makeText(mContext, "Healthy Wealthy Amul", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(mContext, TiwariUncle.class);
+                    intent.putExtra("Button1","3");
                     mContext.startActivity(intent);
                 }
                 if(position==3){
                     Toast.makeText(mContext, "Something Chinese", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(mContext, TiwariUncle.class);
+                    intent.putExtra("Button1","4");
                     mContext.startActivity(intent);
                 }
                 if(position==4){
                     Toast.makeText(mContext, "Everyday Snacks", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(mContext, TiwariUncle.class);
+                    intent.putExtra("Button1","5");
                     mContext.startActivity(intent);
                 }
                 if(position==5){
                     Toast.makeText(mContext, "Wafers and Chocolates", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(mContext, TiwariUncle.class);
+                    intent.putExtra("Button1","6");
                     mContext.startActivity(intent);
                 }
 
